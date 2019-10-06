@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT projectrec (title, header, team, abstract, deliverables, date) >
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT date (#PCDATA) >
+
+<!ELEMENT header (key_name, title, subtitle, begin_date,end_date, supervisor) >
+<!ELEMENT key_name (#PCDATA) >
+<!ELEMENT subtitle (#PCDATA) >
+<!ELEMENT begin_date (#PCDATA) >
+<!ELEMENT end_date (#PCDATA) >
+<!ELEMENT supervisor (#PCDATA) >
+<!ATTLIST supervisor
+            href CDATA #REQUIRED >
+        
+<!ELEMENT team (person+) >
+<!ELEMENT person (name, number, email) >
+<!ELEMENT name (#PCDATA) >
+<!ELEMENT number (#PCDATA) >
+<!ELEMENT email (#PCDATA) >
+
+<!ELEMENT abstract (phrase+) >
+<!ELEMENT phrase (#PCDATA|bold|italic|link)* >
+<!ELEMENT bold (#PCDATA|italic|link)* >
+<!ELEMENT italic (#PCDATA|bold|link)* >
+
+<!ELEMENT deliverables (link+) >
+<!ELEMENT link (#PCDATA) >
+<!ATTLIST link
+            href CDATA #REQUIRED>

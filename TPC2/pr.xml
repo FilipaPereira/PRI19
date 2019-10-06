@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE projectrec SYSTEM "file:/C:/Users/Asus/Desktop/PRI/Aulas/pr.dtd">
+<projectrec>
+    <title>Project Record</title>
+    <header>
+        <key_name>TPC2</key_name>
+        <title>DTDs e XPath</title>
+        <subtitle>TPC referente á cadeira de Processamento e Reconhecimento de Informação</subtitle>
+        <begin_date>30-09-2019</begin_date>
+        <end_date>6-10-2019</end_date>
+        <supervisor href="http://www4.di.uminho.pt/~jcr/">José Carlos Ramalho</supervisor>
+    </header>
+    <team>
+        <person>
+            <name>Ana Filipa Vilela Pereira</name>
+            <number>A81712</number>
+            <email>a81712@alunos.uminho.pt</email>
+        </person>
+    </team>
+    <abstract>
+        <phrase>
+            Neste segundo TPC foi pedido a criação de um DTD que defina um <italic>Project Record</italic> 
+            tendo como base o modelo apresentado nesta <link href="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/PR.htm">página</link>.
+        </phrase>
+        <phrase>
+            Para além disso, foi utilizado <bold>XPath</bold> para responder a determinadas queries sobre
+            arqueossítios e uma agenda de contactos. Tais queries estão presentes nos <link href="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/e6.html">
+            seguintes</link><link href="http://www4.di.uminho.pt/~jcr/XML/CURSOS/PED2008/fichas/ficha3/e5.html">documentos</link>.
+        </phrase>
+    </abstract>
+    <deliverables>
+        <link href="https://github.com/FilipaPereira/PRI19/blob/master/TPC2/pr.dtd">Project Record - DTD</link>
+        <link href="https://github.com/FilipaPereira/PRI19/blob/master/TPC2/pr.xml">Project Record - XML</link>
+        <link href="https://github.com/FilipaPereira/PRI19/blob/master/TPC2/agenda.txt">Queries - Agenda de Contactos</link>
+        <link href="https://github.com/FilipaPereira/PRI19/blob/master/TPC2/arq.txt">Queries - Arqueossítios</link>
+    </deliverables>
+    <date>6-10-2019</date>
+</projectrec>
