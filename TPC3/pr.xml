@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "file:/C:/Users/Asus/Documents/GitHub/PRI19/TPC3/pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI19_TPC3</keyname>
+        <title>Stylesheets XSL e Geração de Website para Arqueossítios</title>
+        <subtitle>TPC referente á cadeira de Processamento e Reconhecimento de Informação</subtitle>
+        <bdate>7-10-2019</bdate>
+        <edate>20-10-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A81712</identifier>
+            <name>Ana Filipa Vilela Pereira</name>
+            <email>a81712@alunos.uminho.pt</email>
+            <photo path="foto.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>Este TPC tinha como objetivos a criação da <i>stylesheet XSL</i> para transformar o <i>XML</i> do Project Record 
+            numa página HTML e a geração de um website para guardar a informação sobre vários arqueossítios.</p>
+        <p>Este website consiste num índice dos arqueossítios presentes no <xref url="http://www4.di.uminho.pt/~jcr/XML/didac/xmldocs/arq.xml">ficheiro</xref>
+        sendo que cada entrada do índice redireciona para a página HTML individual do <u>arqueossítio</u> com a informação correspondente.</p>
+    </abstract>
+    <deliverables>
+        <deliverable path="arq.xsl">Stylesheet XSL para as páginas html dos Arqueossítios</deliverable>
+        <deliverable path="arq.xml">XML com informação dos Arqueossítios</deliverable>
+        <deliverable path="website/index.html">Índice dos Arqueossítios</deliverable>
+        <deliverable path="pr.xsl">Stylesheet XSL para o Project Record</deliverable>
+        <deliverable path="pr.xml">Project Record - XML</deliverable>
+    </deliverables>
+</pr>
