@@ -1,0 +1,11 @@
+{
+  "name": "arq-musicas",
+  "version": "1.0.0",
+  "description": "arquivo de musicas",
+  "main": "servidor.js",
+  "scripts": {
+    "start": "node servidor"
+  },
+  "author": "Filipa Pereira",
+  "license": "ISC"
+}
