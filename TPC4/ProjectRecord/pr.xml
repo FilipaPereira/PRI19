@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE pr SYSTEM "file:/C:/Users/Asus/Documents/GitHub/PRI19/TPC3/pr.dtd">
+<!DOCTYPE pr SYSTEM "pr.dtd">
 <pr>
     <meta>
         <keyname>PRI19_TPC4</keyname>
-        <title></title>
+        <title>Servidor em NodeJS para website do Arquivo Musical</title>
         <subtitle>TPC referente á cadeira de Processamento e Reconhecimento de Informação</subtitle>
         <bdate>21-10-2019</bdate>
         <edate>27-10-2019</edate>
@@ -22,11 +22,22 @@
         </member>
     </workteam>
     <abstract>
-        <p></p>
-        <p></p>
+        <p> 
+            Este trabalho de casa tinha como objetivo criar um <b>servidor</b> em NodeJS que recebe pedidos e responde 
+            com a página <i>html</i> correspondente. Para tal, a informação presente no <xref url="../arq-son-EVO.xml">Arquivo Musical</xref>
+            foi dividida em ficheiros <b>xml</b> separados, cada ficheiro contendo a informação de uma música. Para apresentar a informação de 
+            cada uma destas foi também necessário a criação de uma stylesheet, <b>doc2html</b>, para efetuar a conversão dos ficheiros xml para html.
+        </p>
+        <p>
+            O servidor designado em Javascript responde a pedidos na porta <b>3132</b> no seguinte formato: <u>localhost:3132/musicas/12</u>, apresentando 
+            a página html do ficheiro <i>doc12.xml</i> que corresponde à música número 12 do arquivo musical.
+        </p>
     </abstract>
     <deliverables>
-        <deliverable path="arq-son-EVO.xsl">XML do arquivo de músicas</deliverable>
+        <deliverable path="../servidor.js">Servidor</deliverable>
+        <deliverable path="../doc-split.xsl">Stylesheet para separar o arquivo em documentos individuais</deliverable>
+        <deliverable path="../arq-son-EVO.xml">XML do arquivo de músicas</deliverable>
+        <deliverable path="../data/doc2html.xsl">Stylesheet para gerar a página html de cada música</deliverable>
         <deliverable path="pr.xml">Project Record - XML</deliverable>
     </deliverables>
 </pr>
