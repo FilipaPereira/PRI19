@@ -3,7 +3,7 @@ var fs = require('fs')
 
 
 var myserver = http.createServer(function(req,res) {
-    //console.log(req.method + ' ' + req.url)
+    console.log(req.method + ' ' + req.url)
     
     if(req.method == 'GET'){
         var u = req.url.split('/')

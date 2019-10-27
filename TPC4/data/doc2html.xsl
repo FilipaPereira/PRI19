@@ -7,11 +7,17 @@
             <head>
                 <meta charset="UTF-8"/>
                 <title><xsl:value-of select="tit"/></title>
+                <style>
+                    th,tr {
+                    padding: 10px;
+                    text-align: left;
+                    }
+                </style>
             </head>
             
-            <body>
+            <body style="font-family: Cambria">
                 <h3><xsl:value-of select="tit"/></h3>
-                <table>
+                <table width="50%">
                     <xsl:choose>
                         <xsl:when test="musico">
                             <tr>
@@ -34,26 +40,26 @@
                             </tr>
                         </xsl:when>
                     </xsl:choose>
-                    <!--
+                    
                     <xsl:choose>
                         <xsl:when test="obs">
                             <tr>
                                 <th><b>Observações: </b></th>
-                                <td><xsl:apply-templates/></td>
-                                <xsl:choose>
-                                    <xsl:when test="obs/file">
-                                        <td>[<xsl:value-of select="obs/file"/>]</td>
-                                    </xsl:when>
-                                </xsl:choose>
-                                <xsl:choose>
-                                    <xsl:when test="obs/intxp">
-                                        <p><xsl:value-of select="obs/intxp"/></p>
-                                    </xsl:when>
-                                </xsl:choose>
+                                <td>
+                                    <xsl:apply-templates select="obs"/>
+                                    <xsl:for-each select="obs/file">
+                                        <tr>Ficheiro de aúdio: <i>[<xsl:value-of select="."/>]</i></tr>
+                                    </xsl:for-each>
+                                    <xsl:choose>
+                                        <xsl:when test="obs/intxt">
+                                            <tr><u><xsl:value-of select="obs/intxt"/></u></tr>
+                                        </xsl:when>
+                                    </xsl:choose>
+                                </td>
                            </tr>                            
                         </xsl:when>
                     </xsl:choose>
-              -->
+                    
                     <xsl:choose>
                         <xsl:when test="duracao">
                             <tr>
@@ -67,7 +73,8 @@
                         <xsl:when test="file">
                             <tr>
                                 <th><b>Ficheiro audio: </b></th>
-                                <td>[<xsl:value-of select="file"/>]</td>
+                                <td><i>[<xsl:value-of select="file"/>]</i></td>
+                                
                             </tr>
                         </xsl:when>
                     </xsl:choose>
@@ -75,5 +82,8 @@
             </body>
         </html>
     </xsl:template>
+    
+    <xsl:template match="obs/file"/>
+    <xsl:template match="obs/intxt"/>
     
 </xsl:stylesheet>
