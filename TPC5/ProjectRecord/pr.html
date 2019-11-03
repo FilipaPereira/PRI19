@@ -24,7 +24,7 @@
             <th>
                <b>TITLE:</b>
             </th>
-            <td></td>
+            <td>Servidor em Express para Gestão de Alunos</td>
             <th>
                <b>END DATE:</b>
             </th>
@@ -68,7 +68,27 @@
       <hr></hr>
       <h3>Abstract:</h3>
       
-      <p> 
+      <p>
+         Este trabalho de casa tinha como objetivo utilizar a framework 
+         <i>Express</i> para NodeJs
+         de modo a construir um servidor para a gestão de alunos. A estrutura de cada aluno
+         é definida por um
+         identificador, um nome, um curso e um array de notas. Cada uma destas, por sua vez,
+         consiste num indicador e 
+         no respetivo valor da nota.
+         
+      </p>
+      
+      <p>
+         O servidor responde a pedidos do tipo 
+         <b>GET</b>, 
+         <b>POST</b> e 
+         <b>DELETE</b>, sendo possível obter a listagem 
+         de todos os alunos, adicionar e apagar alunos, bem como consultar toda a informação
+         de cada um deles. É também 
+         possível apagar e adicionar notas a cada aluno. Todos os dados dos alunos são guardados
+         num ficheiro 
+         <u>json</u>.
          
       </p>
       
@@ -77,6 +97,30 @@
       <hr></hr>
       <h3>Deliverables:</h3>
       <ul>
+         
+         <li>
+            <a href="../galunos/routes/index.js">Roteador da aplicação</a>
+         </li>
+         
+         <li>
+            <a href="../galunos/views/index.pug">Ficheiro pug da página inicial</a>
+         </li>
+         
+         <li>
+            <a href="../galunos/views/dados-aluno.pug">Ficheiro pug da página para visualizar a informação de um aluno</a>
+         </li>
+         
+         <li>
+            <a href="../galunos/views/layout.pug">Layout de todas as páginas</a>
+         </li>
+         
+         <li>
+            <a href="../galunos/public/javascripts/apagar.js">Ficheiro .js auxiliar para apagar alunos e notas</a>
+         </li>
+         
+         <li>
+            <a href="../galunos/data/alunos.json">Base de dados dos alunos</a>
+         </li>
          
          <li>
             <a href="pr.xml">Project Record - XML</a>

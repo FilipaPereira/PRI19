@@ -1,1 +1,1 @@
-[{"ident":"1","nome":"Rita","curso":"MIEBIOM","notas":[{"indicador":"TPC1","nota":"13"},{"indicador":"TPC2","nota":"16"},{"indicador":"TPC3","nota":"15"},{"indicador":"TPC4","nota":"12"},{"indicador":"Ex2","nota":"12"}]},{"ident":"4","nome":"Luis","curso":"CC","notas":[{"indicador":"Ex2","nota":"12"}]},{"ident":"3","nome":"Sofia","curso":"Medicina","notas":[]}]
+[{"ident":"4","nome":"Luis","curso":"CC","notas":[{"indicador":"Ex2","nota":"12"}]},{"ident":"3","nome":"Sofia","curso":"Medicina","notas":[{"indicador":"Ex3","nota":"18"}]}]

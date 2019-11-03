@@ -1,7 +1,6 @@
 var express = require('express');
 var router = express.Router();
 var jsonfile = require('jsonfile')
-var nanoid = require('nanoid') 
 
 
 var myBD = __dirname + "/../data/alunos.json"
@@ -43,7 +42,6 @@ router.post('/alunos', function(req,res) {
   jsonfile.readFile(myBD, (erro, alunos) => {
     if (!erro){
       registo['notas'] = []
-      //console.log(JSON.stringify(registo))
       alunos.push(registo)
       jsonfile.writeFile(myBD, alunos, erro => {
         if (erro) console.log(erro)
@@ -64,8 +62,6 @@ router.post('/alunos/:idAluno/notas', function(req,res) {
       if (index > -1){
         var al = alunos[index]
         var nota = req.body
-        //console.log(JSON.stringify(nota))
-        //console.log(JSON.stringify(al.notas))
         al.notas.push(nota)
         jsonfile.writeFile(myBD, alunos, erro => {
           if (erro) console.log(erro)
@@ -111,8 +107,7 @@ router.delete('/alunos/:idAluno', function(req,res){
 router.delete('/alunos/:idAluno/notas/:indicador', function(req,res){
   var id = req.params.idAluno
   var idNota = req.params.indicador
-  //console.log('ID do aluno: ' + id)
-  //console.log('ID da nota: ' + idNota)
+
   jsonfile.readFile(myBD, (erro, alunos) =>{
     var index = alunos.findIndex(a => a.ident == id)
     if (!erro) {
