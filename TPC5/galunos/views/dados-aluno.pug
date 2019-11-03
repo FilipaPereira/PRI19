@@ -1,0 +1,46 @@
+extends layout
+block content
+    .w3-container
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Dados do Aluno
+        .w3-card-4
+            table.w3-table-all
+                tr
+                    th Identificador
+                        td= aluno.ident
+                tr
+                    th Nome
+                        td= aluno.nome
+                tr
+                    th Curso
+                        td= aluno.curso
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Notas
+            table.w3-table-all
+                each n in notas
+                    tr  
+                        th Indicador:
+                            td= n.indicador
+                        th Nota:
+                            td= n.nota
+                        td
+                            button.w3-button.w3-green(onclick="apagaNota('" + aluno.ident + "','"+ n.indicador + "')") Apagar
+        .w3-card-4
+            header.w3-container.w3-teal.w3-margin-top
+                h3 Adicionar nota
+            .w3-container
+                form.w3-container(action='/alunos/'+ aluno.ident + '/notas' method='POST')
+                    label
+                        b Indicador
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="indicador")
+                    label
+                        b Nota
+                    input.w3-input.w3-border.w3-light-grey(type="text", name="nota")
+                    input.w3-btn.w3-green.w3-margin(type='submit' value='Adicionar')
+        footer.w3-container.w3-teal
+            address.w3-right Voltar à página principal 
+                a(href="/alunos/")
+                     button.w3-button.w3-green.w3-margin Voltar
+                    
