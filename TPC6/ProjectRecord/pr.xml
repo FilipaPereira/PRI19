@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI19_TPC6</keyname>
+        <title>Servidor em NodeJS para Gestão de Base de Dados sobre Filmes</title>
+        <bdate>04-11-2019</bdate>
+        <edate>10-11-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A81712</identifier>
+            <name>Ana Filipa Vilela Pereira</name>
+            <email>a81712@alunos.uminho.pt</email>
+            <photo path="foto.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Neste trabalho de casa foi proposto construir um servidor utilizando a framework <b>Express</b> para a gestão de uma base de 
+            dados em <i>MongoDB</i>. O servidor responde a pedidos <b>GET</b>, <b>POST</b> e <b>DELETE</b>, sendo que todas as operações
+            efetuadas sobre a base de dados passam por uma API de dados. Esta base de dados sobre filmes encontra-se no <xref url="../movies.json">
+            ficheiro movies.json</xref>.
+        </p>
+        <p>
+            O servidor recebe pedidos de <b>GET</b> para a /, apresentando a página inicial que coloca duas opções: obter a listagem de 
+            todos os filmes ou inserir um novo filme. Os outros pedidos <b>GET</b> que o servidor consegue responder são para: <u>/filmes</u>, 
+            retornando a listagem de filmes; <u>/filmes/:id</u>, apresentando uma página individual com os dados do filme com aquele <i>id</i>;
+            <u>/filmes/inserir</u>, respondendo com uma página que contém um formulário estático para inserir um novo filme.
+            Recebe também pedidos <b>POST</b> para <u>/filmes</u>, inserindo um filme na BD, e pedidos <b>DELETE</b> para <u>/filmes/:id</u>, removendo
+            o filme com o <i>id</i> em questão da base de dados.
+        </p>
+        <p>
+            A API de dados também responde aos seguintes pedidos: <b>GET</b> para <u>/api/filmes</u> e <u>/api/filmes/:id</u>, <b>POST</b> para <u>/api/filmes</u>, e 
+            <b>DELETE</b> para <u>/api/filmes/:id</u>.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../filmes/models/filmes.js">Modelo de dados (Schema) do Filme</deliverable>
+        <deliverable path="../filmes/controllers/filmes.js">Ficheiro com funções de controlo das operações efetuadas na BD</deliverable>
+        <deliverable path="../filmes/public/javascripts/apagar.js">Ficheiro .js auxiliar para apagar filmes</deliverable>
+        <deliverable path="../filmes/routes/api.js">Roteador da Página Principal </deliverable>
+        <deliverable path="../filmes/routes/filmes.js">Roteador da Interface</deliverable>
+        <deliverable path="../filmes/routes/api.js">Roteador da API </deliverable>
+        <deliverable path="../filmes/views/lista-filmes.pug">Ficheiro pug da página com a listagem de filmes</deliverable>
+        <deliverable path="../filmes/views/form-filme.pug">Ficheiro pug do formulário para inserir um filme</deliverable>
+        <deliverable path="../filmes/views/info-filme.pug">Ficheiro pug da página individual de um filme</deliverable>
+        <deliverable path="../filmes/views/index.pug">Ficheiro pug da página inicial</deliverable>
+        <deliverable path="../filmes/views/layout.pug">Layout de todas as páginas</deliverable>
+        <deliverable path="../movies.json">Ficheiro JSON da Base de Dados de filmes</deliverable>
+        <deliverable path="pr.xml">Project Record - XML</deliverable>
+    </deliverables>
+</pr>

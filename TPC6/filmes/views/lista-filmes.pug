@@ -1,0 +1,33 @@
+extends layout
+
+block content
+    .w3-container
+        .w3-card-4
+        header.w3-container.w3-teal.w3-margin-top
+            h1 Lista de Filmes
+        .w3-card-4
+            table.w3-table-all
+                tr
+                    th Título
+                    th Ano
+                    th Elenco
+                    th Género
+                    th Consultar
+                    th Remover
+                each f in lista
+                    tr
+                        td= f.title
+                        td= f.year
+                        td= f.cast
+                        td= f.genres
+                        td
+                            a(href='/filmes/' + f._id)
+                                button.w3-button.w3-green Consultar
+                        td
+                            button.w3-button.w3-green(onclick="apagaFilme('" + f._id + "')") Apagar
+                            
+        footer.w3-container.w3-teal
+            address.w3-right Voltar à página principal
+                a(href='/')
+                    button.w3-button.w3-green.w3-margin Voltar
+    

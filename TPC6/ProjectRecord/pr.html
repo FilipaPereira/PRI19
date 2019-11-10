@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?><html>
+   <head>
+      <title>Project Record</title>
+      <meta charset="UTF-8"></meta>
+   </head>
+   <body>
+      <h1>
+         <center>Project Record</center>
+      </h1>
+      
+      <hr></hr>
+      <table width="85%" cellpadding="2px">
+         <tr align="left">
+            <th>
+               <b>KEY NAME:</b>
+            </th>
+            <td>PRI19_TPC6</td>
+            <th>
+               <b>BEGIN DATE:</b>
+            </th>
+            <td>04-11-2019</td>
+         </tr>
+         <tr align="left">
+            <th>
+               <b>TITLE:</b>
+            </th>
+            <td>Servidor em NodeJS para Gestão de Base de Dados sobre Filmes</td>
+            <th>
+               <b>END DATE:</b>
+            </th>
+            <td>10-11-2019</td>
+         </tr>
+         <tr align="left">
+            <th>
+               <b>SUPERVISOR:</b>
+            </th>
+            <td>José Carlos Ramalho - 
+               
+               <a href="mailto:jcr@di.uminho.pt">jcr@di.uminho.pt</a> - 
+               
+               <a href="http://www4.di.uminho.pt/~jcr/">Homepage</a>
+            </td>
+         </tr>
+      </table>
+      <hr></hr>
+      
+      <hr></hr>
+      <h3>WorkTeam:</h3>
+      <table width="100%">
+         
+         <tr>
+            <td>
+               <ul>
+                  <li>A81712 - Ana Filipa Vilela Pereira - 
+                     
+                     <a href="mailto:a81712@alunos.uminho.pt">a81712@alunos.uminho.pt</a>
+                  </li>
+               </ul>
+            </td>
+            <td>
+               <img src="foto.png" width="30%"></img>
+            </td>
+         </tr>
+         
+      </table>
+      <hr></hr>
+      
+      <hr></hr>
+      <h3>Abstract:</h3>
+      
+      <p>
+         Neste trabalho de casa foi proposto construir um servidor utilizando a framework 
+         <b>Express</b> para a gestão de uma base de 
+         dados em 
+         <i>MongoDB</i>. O servidor responde a pedidos 
+         <b>GET</b>, 
+         <b>POST</b> e 
+         <b>DELETE</b>, sendo que todas as operações
+         efetuadas sobre a base de dados passam por uma API de dados. Esta base de dados sobre
+         filmes encontra-se no 
+         <a href="../movies.json">
+            ficheiro movies.json
+         </a>.
+         
+      </p>
+      
+      <p>
+         O servidor recebe pedidos de 
+         <b>GET</b> para a /, apresentando a página inicial que coloca duas opções: obter a listagem
+         de 
+         todos os filmes ou inserir um novo filme. Os outros pedidos 
+         <b>GET</b> que o servidor consegue responder são para: 
+         <u>/filmes</u>, 
+         retornando a listagem de filmes; 
+         <u>/filmes/:id</u>, apresentando uma página individual com os dados do filme com aquele 
+         <i>id</i>;
+         
+         <u>/filmes/inserir</u>, respondendo com uma página que contém um formulário estático para inserir um novo
+         filme.
+         Recebe também pedidos 
+         <b>POST</b> para 
+         <u>/filmes</u>, inserindo um filme na BD, e pedidos 
+         <b>DELETE</b> para 
+         <u>/filmes/:id</u>, removendo
+         o filme com o 
+         <i>id</i> em questão da base de dados.
+         
+      </p>
+      
+      <p>
+         A API de dados também responde aos seguintes pedidos: 
+         <b>GET</b> para 
+         <u>/api/filmes</u> e 
+         <u>/api/filmes/:id</u>, 
+         <b>POST</b> para 
+         <u>/api/filmes</u>, e 
+         
+         <b>DELETE</b> para 
+         <u>/api/filmes/:id</u>.
+         
+      </p>
+      
+      <hr></hr>
+      
+      <hr></hr>
+      <h3>Deliverables:</h3>
+      <ul>
+         
+         <li>
+            <a href="../filmes/models/filmes.js">Modelo de dados (Schema) do Filme</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/controllers/filmes.js">Ficheiro com funções de controlo das operações efetuadas na BD</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/public/javascripts/apagar.js">Ficheiro .js auxiliar para apagar filmes</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/routes/api.js">Roteador da Página Principal </a>
+         </li>
+         
+         <li>
+            <a href="../filmes/routes/filmes.js">Roteador da Interface</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/routes/api.js">Roteador da API </a>
+         </li>
+         
+         <li>
+            <a href="../filmes/views/lista-filmes.pug">Ficheiro pug da página com a listagem de filmes</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/views/form-filme.pug">Ficheiro pug do formulário para inserir um filme</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/views/info-filme.pug">Ficheiro pug da página individual de um filme</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/views/index.pug">Ficheiro pug da página inicial</a>
+         </li>
+         
+         <li>
+            <a href="../filmes/views/layout.pug">Layout de todas as páginas</a>
+         </li>
+         
+         <li>
+            <a href="../movies.json">Ficheiro JSON da Base de Dados de filmes</a>
+         </li>
+         
+         <li>
+            <a href="pr.xml">Project Record - XML</a>
+         </li>
+         
+      </ul>
+      <hr></hr>
+      
+   </body>
+</html>
