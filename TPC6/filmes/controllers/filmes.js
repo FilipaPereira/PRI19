@@ -19,7 +19,7 @@ module.exports.inserir = f => {
     var newCast = f.cast.filter(function(c){return c!=''});
     f.cast = newCast
 
-    var newGenres = f.cast.filter(function(g){return g!=''});
+    var newGenres = f.genres.filter(function(g){return g!=''});
     f.genres = newGenres
 
     var novo = new Filme (f)
