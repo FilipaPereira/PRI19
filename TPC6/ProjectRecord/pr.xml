@@ -44,7 +44,7 @@
         <deliverable path="../filmes/models/filmes.js">Modelo de dados (Schema) do Filme</deliverable>
         <deliverable path="../filmes/controllers/filmes.js">Ficheiro com funções de controlo das operações efetuadas na BD</deliverable>
         <deliverable path="../filmes/public/javascripts/apagar.js">Ficheiro .js auxiliar para apagar filmes</deliverable>
-        <deliverable path="../filmes/routes/api.js">Roteador da Página Principal </deliverable>
+        <deliverable path="../filmes/routes/index.js">Roteador da Página Principal </deliverable>
         <deliverable path="../filmes/routes/filmes.js">Roteador da Interface</deliverable>
         <deliverable path="../filmes/routes/api.js">Roteador da API </deliverable>
         <deliverable path="../filmes/views/lista-filmes.pug">Ficheiro pug da página com a listagem de filmes</deliverable>

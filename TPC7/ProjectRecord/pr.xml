@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI19_TPC7</keyname>
+        <title>API de Dados para Gestão de Base de Dados sobre Obras Musicais</title>
+        <bdate>11-11-2019</bdate>
+        <edate>17-11-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A81712</identifier>
+            <name>Ana Filipa Vilela Pereira</name>
+            <email>a81712@alunos.uminho.pt</email>
+            <photo path="foto.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../GestObras/models/obras.js">Modelo de dados (Schema) da Obra Musical</deliverable>
+        <deliverable path="../GestObras/controllers/obras.js">Ficheiro com funções de controlo das operações efetuadas na BD</deliverable>
+        <deliverable path="../GestObras/routes/api.js">Roteador da API </deliverable>
+        <deliverable path="../obras.json">Ficheiro JSON da Base de Dados de Obras Musicais</deliverable>
+        <deliverable path="pr.xml">Project Record - XML</deliverable>
+    </deliverables>
+</pr>
