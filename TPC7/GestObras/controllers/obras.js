@@ -32,6 +32,6 @@ module.exports.listaCompositores = () => {
 
 module.exports.obrasCompositor = comp => {
     return Obra
-            .aggregate([{$match:{compositor: {$regex: comp}}},{$sort:{nome:1}},{$project:{_id:0,compositor:0}}])
+            .aggregate([{$match:{compositor: {$regex: comp}}},{$sort:{nome:1}},{$project:{_id:0}}])
             .exec()
 }

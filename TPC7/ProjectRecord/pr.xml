@@ -22,6 +22,15 @@
     </workteam>
     <abstract>
         <p>
+            Este trabalho de casa tinha como objetivo criar um servidor em NodeJS para a gestão de uma base de dados em 
+            <b>MongoDB</b> sobre obras musicais. Tendo sido implementado apenas a API de dados de modo a efetuar listagens e 
+            procuras sobre a BD.
+        </p>
+        <p>
+            O servidor apenas responde a pedidos <i>GET</i>: para <u>/obras</u>, listando todas as obras presentes na BD, sendo ainda possível 
+            filtrar as mesmas pelo seu <u>período</u>, <u>ano de criação</u> ou <u>compositor</u> através de query strings; para 
+            <u>/compositores</u>, listando todos os compositores das obras musicais; e para <u>/compositores/:nome</u>, que retorna
+            a listagem de todas as obras cujo compositor tenha dado nome.
         </p>
     </abstract>
     <deliverables>
