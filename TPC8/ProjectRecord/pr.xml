@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pr SYSTEM "pr.dtd">
+<pr>
+    <meta>
+        <keyname>PRI19_TPC8</keyname>
+        <title>Servidor NodeJS para Upload de Ficheiros</title>
+        <bdate>18-11-2019</bdate>
+        <edate>24-11-2019</edate>
+        <supervisor>
+            <name>José Carlos Ramalho</name>
+            <email>jcr@di.uminho.pt</email>
+            <homepage>http://www4.di.uminho.pt/~jcr/</homepage>
+        </supervisor>
+    </meta>
+    <workteam>
+        <member>
+            <identifier>A81712</identifier>
+            <name>Ana Filipa Vilela Pereira</name>
+            <email>a81712@alunos.uminho.pt</email>
+            <photo path="foto.png"/>
+        </member>
+    </workteam>
+    <abstract>
+        <p>
+            Este trabalho de casa tinha o intuito de criar um servidor em NodeJS para a gestão de uma base de dados de ficheiros em MongoDB.
+            O servidor deve permitir o <u>upload</u> de vários ficheiros, sendo possível fazer o carregamento de múltiplos ficheiros de uma só vez;
+            apresentando também a listagem dos ficheiros presentes na base de dados.
+        </p>
+        <p>
+            Ao carregar num ficheiro da listagem, são apresentadas as informações referentes ao mesmo através de um <b>modal</b>, dado que se o ficheiro
+            se tratar de uma imagem, esta também é exibida. Os ficheiros/imagens são guardados nas subpastas <b>data</b> e <b>images</b>, dentro da diretoria <b>public</b>.
+        </p>
+    </abstract>
+    <deliverables>
+        <deliverable path="../ficheiros/models/ficheiro.js">Modelo de dados (Schema) do Ficheiro</deliverable>
+        <deliverable path="../ficheiros/controllers/ficheiros.js">Ficheiro com funções de controlo das operações efetuadas na BD</deliverable>
+        <deliverable path="../ficheiros/routes/api.js">Roteador da API </deliverable>
+        <deliverable path="../ficheiros/views/index.pug">Ficheiro pug da página inicial</deliverable>
+        <deliverable path="../ficheiros/public/javascripts/form-ficheiros.js"> Ficheiro com funções auxiliares em JQuery para o formulário dinâmico</deliverable>
+        <deliverable path="../ficheiros/public/data">Pasta de ficheiros carregados</deliverable>
+        <deliverable path="../ficheiros/public/images">Pasta de imagens carregadas</deliverable>
+        <deliverable path="pr.xml">Project Record - XML</deliverable>
+    </deliverables>
+</pr>
