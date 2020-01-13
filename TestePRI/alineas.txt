@@ -1,0 +1,4 @@
+1 - Existem 76 tipologias diferentes
+2 - Existem 5 entidades que pertencem à tipologia tip_FSS
+3 - A tipologia tip_SA participa em 14 processos
+4 - A entidade ent_SEF pertence às tipologias AP(Administração Pública) e FSS(Forças e serviços de segurança)
